@@ -9,7 +9,7 @@ const CityDetail = () => {
   useEffect(() => {
     const fetchCityData = async () => {
       try {
-        const response = await axios.get(`http://localhost:5001/cities/${cityName}`);
+        const response = await axios.get(`https://wayfarer-backend-1342.onrender.com/cities/${cityName}`);
         setCityInfo(response.data);
       } catch (error) {
         console.error("Error fetching city data", error);
